@@ -1,0 +1,11 @@
+version: 2
+updates:
+  - package-ecosystem: "gradle"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "14:45"
+      timezone: "Asia/Tokyo"
+    target-branch: "develop"
+    allow:
+      - dependency-type: "direct"
