@@ -6,6 +6,8 @@ import org.springframework.boot.runApplication
 @SpringBootApplication
 class DemoApplication
 
+@Suppress("EmptyFunctionBlock")
 fun main(args: Array<String>) {
-	runApplication<DemoApplication>(*args)
+	@Suppress("SpreadOperator")
+    runApplication<DemoApplication>(*args)
 }
