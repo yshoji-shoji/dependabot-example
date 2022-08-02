@@ -4,6 +4,7 @@ plugins {
 	id("org.springframework.boot") version "2.6.10"
 	id("io.spring.dependency-management") version "1.0.12.RELEASE"
 	id("org.jlleitschuh.gradle.ktlint") version "9.2.1"
+	id("io.gitlab.arturbosch.detekt") version "1.18.1"
 	kotlin("jvm") version "1.6.21"
 	kotlin("plugin.spring") version "1.6.21"
 }
@@ -21,6 +22,12 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect:1.5.10")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.10")
 	testImplementation("org.springframework.boot:spring-boot-starter-test:2.6.10")
+}
+
+detekt {
+	buildUponDefaultConfig = true
+	allRules = false
+	autoCorrect = true
 }
 
 tasks.withType<KotlinCompile> {
