@@ -6,7 +6,7 @@ plugins {
 	id("org.jlleitschuh.gradle.ktlint") version "9.2.1"
 	id("io.gitlab.arturbosch.detekt") version "1.18.1"
 	kotlin("jvm") version "1.6.21"
-	kotlin("plugin.spring") version "1.6.21"
+	kotlin("plugin.spring") version "1.7.20"
 }
 
 group = "com.example"
