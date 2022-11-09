@@ -19,7 +19,7 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter:2.6.10")
-	implementation("org.jetbrains.kotlin:kotlin-reflect:1.5.10")
+	implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.21")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.10")
 	testImplementation("org.springframework.boot:spring-boot-starter-test:2.6.10")
 }
